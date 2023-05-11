@@ -1,4 +1,3 @@
-// ...
 const element = document.querySelector(".element");
 
 let dragging = false;
