@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Drag and Drop - Js</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container" style="width: 900px">
+      <div class="element"></div>
+    </div>
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        height: 225px;
+        background-color: #18191c;
+        overflow: hidden;
+      }
+
+      .container {
+        position: relative;
+        height: 100%;
+        margin: auto;
+        border: 25px solid #18191c;
+        outline: 1px solid #665610;
+        outline-offset: -26px;
+        background: linear-gradient(to top, #665610 1px, transparent 1px) repeat
+            0 0 / 100% 75px,
+          linear-gradient(to right, #665610 1px, transparent 1px) repeat 0 0 /
+            75px 100%;
+      }
+
+      .element {
+        position: absolute;
+        right: 325px;
+        top: 100px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #ffd829;
+        cursor: grab;
+      }
+    </style>
+    <script src="./script.js"></script>
+  </body>
+</html>
